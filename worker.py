@@ -1,7 +1,7 @@
 # coding=utf-8
 #
-# Read DIF valuation report from CL trustee and get certain
-# numbers out of it.
+# Read DIF files from a directory and output their valuation
+# information to a csv file.
 # 
 from dif_reader.reader import readDif
 from steven_utils.file import getFiles, getFilenameWithoutPath
@@ -61,7 +61,7 @@ if __name__ == '__main__':
 	parser.add_argument('directory', metavar='directory', type=str, help='input directory')
 
 	"""
-		To test the program
+		To test the program, put DIF files into a directory and run:
 
 		$ python worker.py <input directory>
 	"""
